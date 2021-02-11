@@ -1,0 +1,29 @@
+Step 1:
+
+go to project main folder
+
+G:\Local disk\dotnetcoremicroservices\PayrollDockerAPI>
+docker build -f ./PayrollDockerAPI/Dockerfile -t payrollapp2021 .
+
+Step 2:
+docker run -p 6060:80 --name payroll-c1 -d payrollapp2021:latest
+
+docker run -p 6062:80 --name payroll-c2 -d payrollapp2021:latest
+
+docker run -p 6064:80 --name payroll-c3 -d payrollapp2021:latest
+
+Step 3:
+
+http://localhost:6060/weatherforecast
+http://localhost:6062/weatherforecast
+http://localhost:6064/weatherforecast
+
+step 4:
+docker login
+
+Step 5:
+copy the image remote repo
+
+docker tag payrollapp2021:latest eswaribala/rpsallsecpayrollrepo:v1
+docker push eswaribala/rpsallsecpayrollrepo:v1
+
