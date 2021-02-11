@@ -17,4 +17,11 @@ Containerization
 
 docker run -p 7070:80 --name <name of the container> -d <imagename>
 
+Check the log
+
 docker logs <container id>
+
+
+Access API
+
+http://localhost:<portno>/weatherforecastapi
