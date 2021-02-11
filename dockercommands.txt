@@ -24,4 +24,6 @@ docker logs <container id>
 
 Access API
 
-http://localhost:<portno>/weatherforecastapi
+http://localhost:<portno>/<Controller>
+
+http://localhost:7070/weatherforecast
