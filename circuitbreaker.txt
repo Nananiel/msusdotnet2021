@@ -1,0 +1,6 @@
+1. Start Eureka server
+2.Start all the services
+3.http://localhost:8030/api/values/1000
+4.Close the client servicr
+5.http://localhost:8030/hystrix/hystrix.stream
+6.http://localhost:9091/hystrix
